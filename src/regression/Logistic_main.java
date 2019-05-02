@@ -14,10 +14,7 @@ public class Logistic_main {
 		LR_learn.fit(X_train, y_train);
 		double []y_pred = LR_learn.predict(X_test);
 		ResultAnalysis ra = new ResultAnalysis(y_pred, y_test);
-//		System.out.println(Arrays.toString(y_test));
-//		System.out.println(Arrays.toString(y_pred));
 		System.out.println("Accuracy : " + ra.getAccuracy());
-//		System.out.println(Arrays.toString(LR_learn.theta));
 		
 	}
 }
